@@ -81,15 +81,6 @@ def search(sportmen:list,results:list):
             break
     return sportmen, results
 
-def open_file(file:str)->list:
-    """
-    """
-    fail=open(file,'r',encoding="utf-8-sig")
-    mas=[]
-    for rida in fail:
-        mas.append(rida.strip())
-    fail.close
-    return mas
 
 def save_data(sportmen:list,results:list,file:str):
     """
